@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="src/app.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <header>
+    <h1 class="text-3xl font-bold underline">Tic-Tac-Toe</h1>
+  </header>
+  
+  <section grid grid-flow-row auto-rows-max>
+    <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+    <div>
+      <label for="playerOneChoice">Player 1:</label>
+        <select name="playerOneChoice" id="playerOneChoice">
+          <option value="hidden">Choose Letter </option>
+          <option value="x">X</option>
+          <option value="y">Y</option>  
+        </select>
+    </div>
+    <div>
+      <label for="playerTwoChoice">Player 2:</label>
+      <select name="playerTwoChoice" id="playerTwoChoice">
+        <option value="hidden">Choose Letter </option>
+        <option value="x">Y</option>
+        <option value="y">X</option>
+      </select>
+    </div>
+  </section>
+  <section>
+    <div class="grid grid-flow-col auto-cols-max grid-rows-3 gap-3">
+      <button id="btn-1" class="btn"></button>
+      <button id="btn-2" class="btn"></button>
+      <button id="btn-3" class="btn"></button>
+      <button id="btn-4" class="btn"></button>
+      <button id="btn-5" class="btn"></button>
+      <button id="btn-6" class="btn"></button>
+      <button id="btn-7" class="btn"></button>
+      <button id="btn-8" class="btn"></button>
+      <button id="btn-9" class="btn"></button>
+    </div>
+  </section>
+</body>
+</html>
